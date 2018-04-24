@@ -1,0 +1,29 @@
+{
+  "name": "minesweeper-core",
+  "version": "1.0.0",
+  "main": "src/minesweeper.js",
+  "module": "src/minesweeper.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "@babel/node": "^7.0.0-beta.46",
+    "@babel/register": "^7.0.0-beta.46",
+    "ava": "^1.0.0-beta.4"
+  },
+  "ava": {
+    "files": [
+      "src/**/*.spec.js"
+    ],
+    "sources": [
+      "src/**/*.js"
+    ],
+    "require": [
+      "@babel/register"
+    ]
+  },
+  "scripts": {
+    "test": "ava",
+    "demo": "babel-node ./src/demo.js"
+  }
+}
